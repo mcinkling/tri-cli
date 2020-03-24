@@ -160,18 +160,17 @@ int main() {
         NULL;
     }
 
-    if (false) {
-    cout << "Konnte nicht alle Werte berechnen;\n";
-    cout << "bitte geben Sie mindestens 2 Werte ein, davon min. 1 Länge.\n\n";
-    }
-
-
     cout << "Winkel α     = " << alpha << "°\n";
     cout << "Winkel β     = " << beta << "°\n";
     cout << "Kathete a    = " << a << '\n';
     cout << "Kathete b    = " << b << '\n';
     cout << "Hypotenuse c = " << c << '\n';
 
+    if (alpha == 0 || beta == 0 || a == 0 || b == 0 || c == 0) {
+    cout << "\nKonnte nicht alle Werte berechnen;\n";
+    cout << "bitte geben Sie mindestens 2 Werte ein, davon min. 1 Länge.";
+    }
+    
     cout << "\nEnter zum Verlassen...";
     cin.ignore();
     return 0;
