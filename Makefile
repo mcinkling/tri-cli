@@ -14,4 +14,4 @@ install:
 	@echo "Installing ain't supported!"
 
 run:
-	gnome-terminal -e ~/Projekte/cpptest/prog
+	gnome-terminal -e ./prog
